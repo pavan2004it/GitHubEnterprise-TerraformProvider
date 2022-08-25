@@ -1,16 +1,22 @@
-package gitEnt
+package gitent
 
 import (
 	"context"
-	"gitEnt/gitEnt/client"
+	"gitEnt/gitent/client"
+	"gitEnt/gitent/core"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
 func Provider() *schema.Provider {
 	return &schema.Provider{
-		ResourcesMap:   map[string]*schema.Resource{},
-		DataSourcesMap: map[string]*schema.Resource{},
+		ResourcesMap: map[string]*schema.Resource{
+			"gitent_organization": core.ResourceOrganization(),
+		},
+		DataSourcesMap: map[string]*schema.Resource{
+			"gitent_organizations": core.DataOrganizations(),
+			"gitent_organization":  core.DataOrganization(),
+		},
 		Schema: map[string]*schema.Schema{
 			"base_url": {
 				Type:        schema.TypeString,
