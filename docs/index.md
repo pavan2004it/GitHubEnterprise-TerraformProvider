@@ -8,7 +8,22 @@ description: |-
 
 # gitent Provider
 
+## Example Usage
 
+terraform {
+    required_providers {
+        gitent = {
+            source  = "pavan2004it/gitent"
+            version = "~> 2.0.0"
+        }
+    }
+}
+
+provider "gitent" {
+    base_url = "<base url of the github enterprise>"
+    token = "<pat token>"
+    upload url = "<upload url of github enterprise>"
+}
 
 
 
