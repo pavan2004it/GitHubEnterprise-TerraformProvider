@@ -2,7 +2,7 @@ package core
 
 import (
 	"context"
-	"gitEnt/gitent/client"
+	"gitent/gitent/client"
 	"github.com/google/go-github/v47/github"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"

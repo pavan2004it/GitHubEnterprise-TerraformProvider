@@ -1,9 +1,10 @@
-module gitEnt
+module gitent
 
 go 1.19
 
 require (
 	github.com/google/go-github/v47 v47.0.1-0.20220822225427-243bda850b1f
+	github.com/hashicorp/terraform-plugin-docs v0.13.0
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.21.0
 	golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d
 )
@@ -35,7 +36,6 @@ require (
 	github.com/hashicorp/logutils v1.0.0 // indirect
 	github.com/hashicorp/terraform-exec v0.17.2 // indirect
 	github.com/hashicorp/terraform-json v0.14.0 // indirect
-	github.com/hashicorp/terraform-plugin-docs v0.13.0 // indirect
 	github.com/hashicorp/terraform-plugin-go v0.14.0 // indirect
 	github.com/hashicorp/terraform-plugin-log v0.7.0 // indirect
 	github.com/hashicorp/terraform-registry-address v0.0.0-20220623143253-7d51757b572c // indirect

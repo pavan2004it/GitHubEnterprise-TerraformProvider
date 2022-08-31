@@ -3,7 +3,7 @@ package core
 import (
 	"context"
 	"fmt"
-	"gitEnt/gitent/client"
+	"gitent/gitent/client"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"strconv"

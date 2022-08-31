@@ -2,8 +2,8 @@ package gitent
 
 import (
 	"context"
-	"gitEnt/gitent/client"
-	"gitEnt/gitent/core"
+	"gitent/gitent/client"
+	"gitent/gitent/core"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
